@@ -19,6 +19,14 @@
 }
 
 /* основные */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -26,6 +34,12 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
 }
 .link {
   text-decoration: none;
@@ -35,7 +49,10 @@ body {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
+
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 .button {
@@ -45,6 +62,8 @@ body {
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  border-radius: 4px;
+  padding: 10px 32px;
   cursor: pointer;
 }
 /* шапка */
@@ -83,7 +102,14 @@ body {
 .hero {
   background-color: var(--hero-bg-color);
   text-align: center;
+  width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 200px 452px 280px;
+  outline: 1px solid tomato;
 }
+
 h1 {
   font-size: 44px;
   line-height: 1.36;
@@ -92,6 +118,7 @@ h1 {
   color: var(--primary-white-color);
   font-weight: 900;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 /* качества компании*/
@@ -99,11 +126,15 @@ h1 {
   display: none;
 }
 .list-title {
+  margin-top: 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.4;
   text-transform: uppercase;
   color: var(--title-text-color);
+}
+.list-text {
+  margin-bottom: 0;
 }
 .ability,
 .comunity {
