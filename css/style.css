@@ -44,6 +44,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   outline: 2px solid tomato;
+  display: flex;
 }
 
 .link {
@@ -53,11 +54,14 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+  display: inline-flex;
 }
+
 .list {
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
+  display: inline-flex;
 }
 
 .button {
@@ -68,8 +72,19 @@ body {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   cursor: pointer;
+  padding: 10px 32px;
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
 }
+
 /* шапка */
+
+nav{
+  padding: 24px 93px 25px 15px;
+  justify-content: space-between;
+}
+
 
 .link-web,
 .link-studio,
@@ -112,6 +127,7 @@ body {
   background-color: var(--hero-bg-color);
   text-align: center;
   width: 1600px;
+  height: 600px;
   margin-left: auto;
   margin-right: auto;
   outline: 2px solid tomato;
@@ -126,18 +142,21 @@ h1 {
   font-weight: 900;
   text-align: center;
   margin: 0;
+  padding: 200px 452px 30px 452px;
+}
+
+
+/* качества компании*/
+
+.titel-hidden {
+  display: none;
 }
 
 p {
   margin-bottom: 0;
 }
 
-/* качества компании*/
-.titel-hidden {
-  display: none;
-}
-
-.ability{
+.ability {
   margin-top: 0;
 }
 
@@ -171,6 +190,7 @@ p {
 }
 
 /* подвал */
+
 footer {
   background-color: var(--hero-bg-color);
   width: 1600px;
@@ -190,18 +210,22 @@ footer {
 }
 
 /* портфолио */
+
 .portfolio-list {
   list-style: none;
   margin-bottom: 0;
   margin-top: 0;
 }
+
 .portfolio-list a:hover,
 .portfolio-list a:focus {
   color: var(--accent-color);
 }
+
 .portfolio-list .current {
   color: var(--accent-color);
 }
+
 .portfolio-list .button {
   font-weight: 500;
   font-size: 16px;
@@ -210,14 +234,17 @@ footer {
   background-color: var(--secondary-bg-color);
   cursor: pointer;
 }
+
 .portfolio-list button:focus,
 .portfolio-list button:hover {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
+
 .titel-hidden {
   display: none;
 }
+
 .portfolio-title {
   font-weight: 700;
   font-size: 18px;
@@ -225,6 +252,7 @@ footer {
   letter-spacing: 0.06em;
   color: var(--title-text-color);
 }
+
 .portfolio-text {
   font-size: 16px;
   line-height: 1.88;
