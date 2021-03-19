@@ -6,6 +6,7 @@
 /*вторичный цвет фона: #F5F4FA*/
 /*цвет логотипа: №000*
 /* фон секции героя: #2F303A;*/
+/* цвет граниы хедера: #ECECEC */
 
 :root {
   --primary-text-color: #757575;
@@ -16,10 +17,13 @@
   --secondary-bg-color: #f5f4fa;
   --logo-color: #000;
   --hero-bg-color: #2f303a;
+  --header-border-color: #ECECEC;
 }
 
-html {
-  box-sizing: border-box;
+/* основные */
+
+html{
+  box-sizing: inherit;
 }
 
 *,
@@ -28,8 +32,6 @@ html {
   box-sizing: border-box;
 }
 
-/* основные */
-
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -37,14 +39,9 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin: 0;
 }
 
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  outline: 2px solid tomato;
-}
 
 .link {
   text-decoration: none;
@@ -53,15 +50,28 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+  display: inline-block;
+  padding: 24px 94px 24px 0;
 }
 
+.list .list-link{
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+.list .list-link :last-child {
+  padding-right: 0;
+} 
+
+.list-contacts,
 .list {
   list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
   display: inline-flex;
 }
-
 
 .button {
   font-weight: 700;
@@ -71,37 +81,59 @@ body {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   cursor: pointer;
-  padding: 10px 32px;
-  display: inline-block;
-  border-radius: 4px;
-  border: none;
 }
+
 
 /* шапка */
 
-header .container{
-  display: flex;
-  height: 80px;
-  align-items: center;
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  outline: 2px solid purple;
 }
 
-.container .list{
-  margin-left: 93px
+/* vall */
+.divnav{
+  display: flex;
+  align-items: center;
+}
+.nav{
+  display:flex;
+}
+.nav .link{
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-right: 94px;
 }
 
-.list-item{
-  justify-content: flex-end;
+.list{
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
 }
 
-.list li{
-  margin-right: 50px;
+.list-link{
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+  padding-right: 50px;
 }
 
-.list li .item:last-child {
-margin-right: 0;
+header{
+  border-bottom: 1px solid var(--header-border-color);
+  background-color: var(--primary-white-color);
 }
+
+
+/* vall */
+
+
 
 .link-web,
 .link-studio,
@@ -111,26 +143,31 @@ margin-right: 0;
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
+  display: inline-flex;
 }
 
 .link-studio {
   color: var(--logo-color);
 }
-
 .studio-link {
   color: var(--primary-white-color);
 }
-
 .list a:hover,
 .list a:focus {
   color: var(--accent-color);
 }
-
 .list .current {
   color: var(--accent-color);
 }
 
 .list-item {
+  align-items: center;
+  display: inline-flex;
+  margin-left: 50px;
+}
+
+.list-mail,
+.list-tel {
   text-decoration: none;
   font-weight: 500;
   line-height: 1.14;
@@ -138,16 +175,20 @@ margin-right: 0;
   color: var(--primary-text-color);
 }
 
+h1,
+h2,
+h3,
+p{
+  margin: 0;
+  padding:0;
+}
+
+
 /* герой */
 
-.hero {
+.hero-section{
   background-color: var(--hero-bg-color);
   text-align: center;
-  width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  outline: 2px solid tomato;
 }
 
 h1 {
@@ -158,29 +199,30 @@ h1 {
   color: var(--primary-white-color);
   font-weight: 900;
   text-align: center;
-  margin: 0;
-  padding: 200px 452px 30px 452px;
+  padding-top: 200px;
+  padding-bottom: 30px;
 }
 
+
+
+.primary {
+  display: inline-block;
+  border-radius: 4px;
+  min-width: 200px;
+  padding: 10px 32px;
+  margin-bottom: 200px;
+  border: none;
+}
 
 /* качества компании*/
 
+.section{
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
 .titel-hidden {
   display: none;
 }
-
-main .container {
-  margin-top: 94px;
-}
-
-p {
-  margin-bottom: 0;
-}
-
-.ability {
-  margin-top: 0;
-}
-
 .list-title {
   font-weight: 700;
   font-size: 14px;
@@ -188,7 +230,12 @@ p {
   text-transform: uppercase;
   color: var(--title-text-color);
 }
- 
+
+.detales {
+  padding-top: 0;
+  justify-content: space-between;
+}
+
 .ability,
 .comunity {
   font-weight: 700;
@@ -197,7 +244,6 @@ p {
   text-align: center;
   color: var(--title-text-color);
 }
-
 .name {
   font-weight: 500;
   font-size: 16px;
@@ -210,42 +256,66 @@ p {
 }
 
 /* подвал */
-
-footer {
+.footer {
   background-color: var(--hero-bg-color);
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  outline: 2px solid tomato;
 }
+
+.footer-link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+  margin-top: 60px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.adress .location{
+ padding-top: 0;
+ padding-bottom: 0;
+}
+
 .location {
+  font-style: normal;
   text-decoration: none;
   color: var(--primary-white-color);
   font-weight: 400;
-  font-style: normal;
+  padding-top: 0;
+ padding-bottom: 0;
+ margin-left: auto;
+ margin-right: auto;
 }
-.item-link {
+
+.mail-list,
+.tel-list{
   text-decoration: none;
   color: var(--logo-color) 0.6;
+  font-style: normal;
+  color: var(--primary-white-color) 60%;
+}
+.footer-list{
+  list-style: none;
+  text-decoration: none;
+  padding-left: 0;
+}
+.mail-list{
+  padding-bottom: 9px;
+  padding-top: 9px;
 }
 
 /* портфолио */
-
 .portfolio-list {
   list-style: none;
-  margin-bottom: 0;
-  margin-top: 0;
 }
-
 .portfolio-list a:hover,
 .portfolio-list a:focus {
   color: var(--accent-color);
 }
-
 .portfolio-list .current {
   color: var(--accent-color);
 }
-
 .portfolio-list .button {
   font-weight: 500;
   font-size: 16px;
@@ -254,17 +324,14 @@ footer {
   background-color: var(--secondary-bg-color);
   cursor: pointer;
 }
-
 .portfolio-list button:focus,
 .portfolio-list button:hover {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
-
 .titel-hidden {
   display: none;
 }
-
 .portfolio-title {
   font-weight: 700;
   font-size: 18px;
@@ -272,7 +339,6 @@ footer {
   letter-spacing: 0.06em;
   color: var(--title-text-color);
 }
-
 .portfolio-text {
   font-size: 16px;
   line-height: 1.88;
