@@ -54,7 +54,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
-  display: inline-flex;
 }
 
 .list {
@@ -63,6 +62,7 @@ body {
   margin-bottom: 0;
   display: inline-flex;
 }
+
 
 .button {
   font-weight: 700;
@@ -80,11 +80,13 @@ body {
 
 /* шапка */
 
-nav{
-  padding: 24px 93px 25px 15px;
-  justify-content: space-between;
+.list li{
+  margin-right: 50px;
 }
 
+.list li .item:last-child {
+margin-right: 0;
+}
 
 .link-web,
 .link-studio,
@@ -166,9 +168,8 @@ p {
   line-height: 1.4;
   text-transform: uppercase;
   color: var(--title-text-color);
-  margin-top: 0;
 }
-
+ 
 .ability,
 .comunity {
   font-weight: 700;
@@ -176,8 +177,8 @@ p {
   line-height: 1.17;
   text-align: center;
   color: var(--title-text-color);
-  margin-top: 0;
 }
+
 .name {
   font-weight: 500;
   font-size: 16px;
