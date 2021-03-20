@@ -80,23 +80,6 @@ body {
   align-items: center;
 }
 
-.list-puncts {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  flex-wrap: nowrap;
-  margin-left: -30px;
-  
-}
-
-.list-puncts > .punct {
-  flex-basis: calc(100% / 4);
-  margin-left: 30px;
-}
-
-
-
 .button {
   font-weight: 700;
   font-size: 16px;
@@ -206,6 +189,7 @@ p {
 .hero-section {
   background-color: var(--hero-bg-color);
   text-align: center;
+  padding-bottom: 0;
 }
 
 h1 {
@@ -229,12 +213,16 @@ h1 {
   border: none;
 }
 
-/* качества компании*/
+/* Наши положительные качества*/
 
-.section {
+section {
   padding-bottom: 94px;
   padding-top: 94px;
 }
+
+.qualities{
+  padding-bottom: 0px;
+  }
 
 .visually-hidden {
   position: absolute !important;
@@ -257,15 +245,53 @@ h1 {
   padding-top: 0;
 }
 
+.list-puncts {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: -30px;
+  
+}
+
+.list-puncts > .punct {
+  flex-basis: calc(100% / 4);
+  margin-left: 30px;
+}
+
+.gallery{
+  padding-top: 83px;
+}
+
+.list-ability{
+padding: 0;
+margin: 0;
+list-style: none;
+
+
+display: flex;
+flex-wrap: wrap;
+
+margin-right: -30px;
+margin-top: -30px;
+
+}
+
+.list-ability > .ability-img {
+flex-basis: calc(100% /3 - 30px);
+margin-right: 30px;
+margin-top: 30px;
+}
+
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
+  
 }
 
-/* .list-text {
-  width: 270px;
-} */
 
 /*  комaнда */
 
@@ -281,6 +307,7 @@ img {
   text-align: center;
   color: var(--title-text-color);
   padding-bottom: 50px;
+  padding-top: 0;
 }
 
 .person {
