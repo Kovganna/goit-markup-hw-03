@@ -84,10 +84,18 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: -30px;
+  
 }
+
 .list-puncts > .punct {
-  flex-basis: calc(100% / 3);
+  flex-basis: calc(100% / 4);
+  margin-left: 30px;
 }
+
+
 
 .button {
   font-weight: 700;
@@ -255,9 +263,9 @@ img {
   height: auto;
 }
 
-.list-text {
+/* .list-text {
   width: 270px;
-}
+} */
 
 /*  комaнда */
 
