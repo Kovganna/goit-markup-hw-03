@@ -17,12 +17,12 @@
   --secondary-bg-color: #f5f4fa;
   --logo-color: #000;
   --hero-bg-color: #2f303a;
-  --header-border-color: #ECECEC;
+  --header-border-color: #ececec;
 }
 
 /* основные */
 
-html{
+html {
   box-sizing: inherit;
 }
 
@@ -42,7 +42,6 @@ body {
   margin: 0;
 }
 
-
 .link {
   text-decoration: none;
   color: inherit;
@@ -54,7 +53,7 @@ body {
   padding: 24px 94px 24px 0;
 }
 
-.list .list-link{
+.list .list-link {
   text-decoration: none;
   color: inherit;
   font-weight: 500;
@@ -65,26 +64,29 @@ body {
 
 .list .list-link :last-child {
   padding-right: 0;
-} 
+}
 
 .list .list-link :first-child {
   padding: 0;
   margin: 0;
-} 
+}
 
-.list-puncts,
+/* .list-puncts */
+
 .list {
   list-style: none;
   display: inline-flex;
+  margin-left: auto;
+  align-items: center;
 }
 
-.list-puncts{
-  padding:0;
+.list-puncts {
+  padding: 0;
   margin: 0;
   list-style: none;
 }
-.list-puncts> .punct{
-flex-basis: calc(100%/3);
+.list-puncts > .punct {
+  flex-basis: calc(100% / 3);
 }
 
 .button {
@@ -97,7 +99,6 @@ flex-basis: calc(100%/3);
   cursor: pointer;
 }
 
-
 /* шапка */
 
 .container {
@@ -109,26 +110,27 @@ flex-basis: calc(100%/3);
   outline: 2px solid purple;
 }
 
+header {
+  border-bottom: 1px solid var(--header-border-color);
+  background-color: var(--primary-white-color);
+}
+
 /* vall */
-.divnav{
+.divnav {
   display: flex;
   align-items: center;
 }
-.nav{
-  display:flex;
+
+.nav {
+  display: flex;
 }
-.nav .link{
+
+.nav .link {
   padding-top: 24px;
   padding-bottom: 24px;
   padding-right: 94px;
 }
-.list{
-  margin-left: auto;
-  display: inline-flex;
-  align-items: center;
-}
-
-.list-link{
+.list-link {
   text-decoration: none;
   color: inherit;
   font-weight: 500;
@@ -138,15 +140,7 @@ flex-basis: calc(100%/3);
   padding-right: 50px;
 }
 
-header{
-  border-bottom: 1px solid var(--header-border-color);
-  background-color: var(--primary-white-color);
-}
-
-
 /* vall */
-
-
 
 .link-web,
 .link-studio,
@@ -162,13 +156,16 @@ header{
 .link-studio {
   color: var(--logo-color);
 }
+
 .studio-link {
   color: var(--primary-white-color);
 }
+
 .list a:hover,
 .list a:focus {
   color: var(--accent-color);
 }
+
 .list .current {
   color: var(--accent-color);
 }
@@ -191,15 +188,14 @@ header{
 h1,
 h2,
 h3,
-p{
+p {
   margin: 0;
-  padding:0;
+  padding: 0;
 }
-
 
 /* герой */
 
-.hero-section{
+.hero-section {
   background-color: var(--hero-bg-color);
   text-align: center;
 }
@@ -216,8 +212,6 @@ h1 {
   padding-bottom: 30px;
 }
 
-
-
 .primary {
   display: inline-block;
   border-radius: 4px;
@@ -229,13 +223,22 @@ h1 {
 
 /* качества компании*/
 
-.section{
+.section {
   padding-bottom: 94px;
   padding-top: 94px;
 }
-.titel-hidden {
-  display: none;
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
+
 .list-title {
   font-weight: 700;
   font-size: 14px;
@@ -252,13 +255,13 @@ img {
   height: auto;
 }
 
-.list-text{
-width: 270px;
+.list-text {
+  width: 270px;
 }
 
 /*  комaнда */
 
-.teem{
+.teem {
   background-color: var(--secondary-bg-color);
 }
 
@@ -272,10 +275,9 @@ width: 270px;
   padding-bottom: 50px;
 }
 
-.person{
+.person {
   padding-left: 30px;
 }
-
 
 .name {
   font-weight: 500;
@@ -309,9 +311,9 @@ width: 270px;
   display: inline-block;
 }
 
-.adress .location{
- padding-top: 0;
- padding-bottom: 0;
+.adress .location {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .location {
@@ -320,24 +322,24 @@ width: 270px;
   color: var(--primary-white-color);
   font-weight: 400;
   padding-top: 0;
- padding-bottom: 0;
- margin-left: auto;
- margin-right: auto;
+  padding-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mail-list,
-.tel-list{
+.tel-list {
   text-decoration: none;
   color: var(--logo-color) 0.6;
   font-style: normal;
   color: var(--primary-white-color) 60%;
 }
-.footer-list{
+.footer-list {
   list-style: none;
   text-decoration: none;
   padding-left: 0;
 }
-.mail-list{
+.mail-list {
   padding-bottom: 9px;
   padding-top: 9px;
 }
@@ -384,4 +386,3 @@ width: 270px;
   font-size: 16px;
   line-height: 1.88;
 }
-
