@@ -67,6 +67,11 @@ body {
   padding-right: 0;
 } 
 
+.list .list-link :first-child {
+  padding: 0;
+  margin: 0;
+} 
+
 .list-puncts,
 .list {
   list-style: none;
@@ -78,8 +83,8 @@ body {
   margin: 0;
   list-style: none;
 }
-.list-puncts> .item{
-
+.list-puncts> .punct{
+flex-basis: calc(100%/3);
 }
 
 .button {
@@ -117,7 +122,6 @@ body {
   padding-bottom: 24px;
   padding-right: 94px;
 }
-list-card,
 .list{
   margin-left: auto;
   display: inline-flex;
@@ -252,14 +256,7 @@ img {
 width: 270px;
 }
 
-
-
-/* .section-detales {
-  padding-top: 0;
-  justify-content: space-between;
-  padding-bottom: 94px;
-  padding-top: 94px;
-} */
+/*  комaнда */
 
 .teem{
   background-color: var(--secondary-bg-color);
@@ -346,8 +343,12 @@ width: 270px;
 }
 
 /* портфолио */
+
 .portfolio-list {
   list-style: none;
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
 }
 .portfolio-list a:hover,
 .portfolio-list a:focus {
@@ -383,3 +384,4 @@ width: 270px;
   font-size: 16px;
   line-height: 1.88;
 }
+
