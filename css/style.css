@@ -260,29 +260,36 @@ section {
   margin-left: 30px;
 }
 
+/* Чем мы занимаемся */
+
 .gallery{
   padding-top: 83px;
 }
 
-.list-ability{
+.list-ability {
 padding: 0;
 margin: 0;
 list-style: none;
 
 
 display: flex;
-flex-wrap: wrap;
-
-margin-right: -30px;
-margin-top: -30px;
-
+flex-wrap: nowrap;
 }
 
+.ability-img:not(:last-child){
+  margin-right: 30px;
+}
+/* margin-right: -30px;
+margin-top: -30px; */
+
+
+/* .ability-img:not(:last-child),
 .list-ability > .ability-img {
-flex-basis: calc(100% /3 - 30px);
+flex-basis: calc((100% - 3*30px)/3);
 margin-right: 30px;
 margin-top: 30px;
-}
+} */
+
 
 
 img {
