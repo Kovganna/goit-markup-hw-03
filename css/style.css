@@ -67,10 +67,19 @@ body {
   padding-right: 0;
 } 
 
-.list-contacts,
+.list-puncts,
 .list {
   list-style: none;
   display: inline-flex;
+}
+
+.list-puncts{
+  padding:0;
+  margin: 0;
+  list-style: none;
+}
+.list-puncts> .item{
+
 }
 
 .button {
@@ -108,7 +117,7 @@ body {
   padding-bottom: 24px;
   padding-right: 94px;
 }
-
+list-card,
 .list{
   margin-left: auto;
   display: inline-flex;
@@ -229,11 +238,31 @@ h1 {
   line-height: 1.4;
   text-transform: uppercase;
   color: var(--title-text-color);
+  padding-bottom: 10px;
+  padding-top: 0;
 }
 
-.detales {
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-text{
+width: 270px;
+}
+
+
+
+/* .section-detales {
   padding-top: 0;
   justify-content: space-between;
+  padding-bottom: 94px;
+  padding-top: 94px;
+} */
+
+.teem{
+  background-color: var(--secondary-bg-color);
 }
 
 .ability,
@@ -243,16 +272,27 @@ h1 {
   line-height: 1.17;
   text-align: center;
   color: var(--title-text-color);
+  padding-bottom: 50px;
 }
+
+.person{
+  padding-left: 30px;
+}
+
+
 .name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   color: var(--title-text-color);
+  padding-top: 30px;
+  padding-bottom: 10px;
+  text-align: center;
 }
 .profession {
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
 }
 
 /* подвал */
