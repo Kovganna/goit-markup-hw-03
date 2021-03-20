@@ -52,30 +52,12 @@ body {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   display: inline-block;
-  padding: 24px 94px 24px 0;
 }
 
-.list .ist-link {
-  text-decoration: none;
-  color: inherit;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--title-text-color);
-}
-
-.list .list-link :last-child {
-  padding-right: 0;
-}
-
-.list .list-link :first-child {
-  padding: 0;
-  margin: 0;
-}
-
-/* .list-puncts */
 
 .list {
+  padding-left: 0;
+  /* margin: 0; */
   list-style: none;
   display: inline-flex;
   margin-left: auto;
@@ -100,7 +82,7 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid purple; */
+  outline: 2px solid purple;
 }
 
 header {
@@ -108,21 +90,6 @@ header {
   background-color: var(--primary-white-color);
 }
 
-/* vall */
-.divnav {
-  display: flex;
-  align-items: center;
-}
-
-.nav {
-  display: flex;
-}
-
-.nav .link {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  padding-right: 94px;
-}
 .list-link {
   text-decoration: none;
   color: inherit;
@@ -130,7 +97,27 @@ header {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
-  padding-right: 50px;
+  }
+
+.nav {
+  display: flex;
+  }
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* vall */
+
+.divnav {
+  display: flex;
+  align-items: center;
+}
+
+.nav .link {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-right: 94px;
 }
 
 /* vall */
@@ -166,7 +153,7 @@ header {
 .list-item {
   align-items: center;
   display: inline-flex;
-  margin-left: 50px;
+  /* margin-left: 50px; */
 }
 
 .list-mail,
