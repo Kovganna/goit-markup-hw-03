@@ -55,7 +55,7 @@ body {
   padding: 24px 94px 24px 0;
 }
 
-.list .list-link {
+.list .ist-link {
   text-decoration: none;
   color: inherit;
   font-weight: 500;
@@ -100,7 +100,7 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid purple;
+  /* outline: 2px solid purple; */
 }
 
 header {
@@ -374,12 +374,16 @@ footer {
 }
 
 .location {
+  display: block;
   font-style: normal;
   text-decoration: none;
   color: var(--primary-white-color);
   font-weight: 400;
+  margin-bottom: 9px;
 }
+
 .mail-list {
+  width: 231px;
   margin-bottom: 9px;
 }
 
@@ -389,12 +393,16 @@ footer {
   color: var(--logo-color) 0.6;
   font-style: normal;
   color: var(--primary-white-color) 60%;
+  display: list-item;
 }
+
 .footer-list {
   list-style: none;
   text-decoration: none;
   padding-left: 0;
 }
+
+
 /* Портфолио */
 
 .portfolio-list {
@@ -408,15 +416,15 @@ footer {
 .portfolio-button:not(:last-child) {
   padding-right: 8px;
 }
+.secondary{
+  padding: 6px 22px;
+}
 
-.portfolio-list a:hover,
+/* .portfolio-list a:hover,
 .portfolio-list a:focus {
   color: var(--accent-color);
-}
+} */
 
-.portfolio-list .current {
-  color: var(--accent-color);
-}
 
 .portfolio-list .button {
   font-weight: 500;
