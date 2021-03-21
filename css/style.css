@@ -174,12 +174,12 @@ img {
 .list a:focus,
 .site-nav a:hover,
 .site-nav a:focus,
+.studio-adress :hover,
+.studio-adress :focus,
 .footer-link a:hover,
 .footer-link a:focus,
 .footer-list a:hover,
-.footer-list a:focus,
-.studio-adress :hover,
-.studio-adress :focus {
+.footer-list a:focus{
   color: var(--accent-color);
 }
 
