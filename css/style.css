@@ -73,7 +73,7 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid purple;
+  /* outline: 2px solid purple; */
 }
 
 .item .list-link {
@@ -89,7 +89,7 @@ img {
   color: var(--title-text-color);
 }
 
-.site-nav .item + .item{
+.site-nav .item + .item {
   margin-left: 50px;
 }
 
@@ -137,11 +137,11 @@ img {
   align-items: center;
 }
 
-.nav{
+.nav {
   display: flex;
 }
 
-.list-tel{
+.list-tel {
   margin-left: 50px;
 }
 
@@ -170,11 +170,13 @@ img {
 }
 
 .list a:hover,
-.list a:focus {
+.list a:hover,
+.site-nav a:hover,
+.site-nav a:focus {
   color: var(--accent-color);
 }
 
-.list .current {
+.site-nav .current {
   color: var(--accent-color);
 }
 
