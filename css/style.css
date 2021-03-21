@@ -305,8 +305,10 @@ section {
 }
 
 .list-person {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 30px;
+  padding-bottom: 19px;
+  padding-left: auto;
+  padding-right: auto;
 }
 
 .ability,
@@ -320,9 +322,6 @@ section {
   padding-top: 0;
 }
 
-.list-titel {
-}
-
 .person {
   margin: 0;
   padding: 0;
@@ -334,6 +333,7 @@ section {
   line-height: 1.19;
   color: var(--title-text-color);
   text-align: center;
+  padding-bottom: 10px;
 }
 .profession {
   font-size: 16px;
@@ -369,7 +369,7 @@ footer {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
-  margin-top: 60px;
+  padding-top: 60px;
   margin-bottom: 20px;
   display: inline-block;
 }
@@ -396,7 +396,7 @@ footer {
 .tel-list {
   color: var(--logo-color) 0.6;
   font-style: normal;
-  color: var(--primary-white-color) 60%;
+  color: color: rgba(255, 255, 255, 0.6);
   display: list-item;
 }
 
@@ -409,7 +409,7 @@ footer {
 .portfolio-list {
   margin: 0;
   display: flex;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   justify-content: center;
 }
 
