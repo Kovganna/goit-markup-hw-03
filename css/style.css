@@ -368,6 +368,7 @@ section {
 footer {
   background-color: var(--hero-bg-color);
   padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 .footer-link {
@@ -376,7 +377,6 @@ footer {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
-  padding-top: 60px;
   margin-bottom: 20px;
   display: inline-block;
 }
